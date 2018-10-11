@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 100%;
+  background: #eff1f2;
+  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Lato', 'open-sans';
+}
+
+h1 {
+  text-align: center;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+}
+
+.app-container {
+  
+}
+
+input.task-adder {
+  display: inline;
+  width: 210px;
+  height: 31px;
+}
+
+.form-container {
+  display: flex;
+  justify-content:  center;
+  padding-bottom: 1.6em;
+  //background: #dfe6e9;
+}
+
+button {
+  display: inline;
+  background: #3498db;
+  color: white;
+  font-weight: 600;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  width: 80px;
+  height: 33px;
+}
+
+.tasks-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.2em;
+  height: 100%;
+  
+}
+.task__mark{
+  position: relative;
+}
+
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+  padding: 1em 1em;
+  width: 350px;
+  background: #cbd1d8;
+  border-radius: 2px;
+  border: 1px solid #2d3436;
+  margin-bottom: 1em;
+}
+
+.task__text {
+  font-size: 1em;
+}
+
+.fas {
+  color: #c0392b;
+  cursor: pointer;
+}
+
+
+
+.task-text {
+  display: inline !important;
+}
+
+@media screen and (max-width: 360px) {
+
+  .task {
+    width: 100%;
+  }
+}
